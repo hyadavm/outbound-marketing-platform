@@ -12,6 +12,27 @@ The platform provides complete end-to-end outbound pipeline management: prospect
 
 ---
 
+## ⚡ How to Run (Single Command)
+
+You can run both Backend and Frontend together with **one single command**:
+
+```bash
+# Clone / navigate to project root directory
+cd /Users/harshithayadav/Desktop/Outlook
+
+# Run full-stack application (starts both backend & frontend concurrently)
+npm run dev
+```
+
+- **Web Application**: **http://localhost:3000**
+- **Backend REST API**: **http://localhost:5001**
+
+### 🔑 Demo Login Credentials
+- **Email**: `alex@outboundio.com`
+- **Password**: `password123`
+
+---
+
 ## 🛠 Technology Stack
 
 ### Frontend
@@ -129,34 +150,3 @@ backend/
 | **Settings** | `/settings` | SMTP delivery credentials, custom tracking domain, API key management |
 | **Profile** | `/profile` | User account settings and company information |
 
----
-
-## ⚡ How to Run Locally
-
-### 1. Start the Backend API
-```bash
-cd backend
-npm install
-npm run dev
-```
-- Server running on **http://localhost:5001**
-- Auto-seeds **5,000 lead records** on first launch!
-
-### 2. Start the Frontend Application
-```bash
-cd frontend
-npm install
-npm run dev
-```
-- Web App running on **http://localhost:3000**
-
-### 🔑 Demo Login Credentials
-- **Email**: `alex@outboundio.com`
-- **Password**: `password123`
-
----
-
-## 🧪 Testing & Verification
-- **TypeScript**: 0 compilation errors across frontend & backend (`tsc --noEmit`).
-- **Database Seeding**: Verified `5,000` lead records populated in SQLite database.
-- **API Performance**: Paginated lead query returns 10 records per page out of 5,000 in <5ms.
