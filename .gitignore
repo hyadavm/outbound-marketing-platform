@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Production Builds
+dist/
+backend/dist/
+frontend/dist/
+
+# SQLite Database Files & Logs
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.log
+
+# Environment & IDE
+.env
+.DS_Store
+.idea/
+.vscode/
